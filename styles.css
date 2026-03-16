@@ -60,7 +60,7 @@ body {
 
 /* ========== Hero Section ========== */
 .hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://wc1.prod1.arlocdn.net/p/bc6c20229f5b4c6db0f063d549365c51/d/VrINMrEofHrPotpgkhl0ygXrCU7VmygFSLoCC0bk4aslj1pZ/Onsite-Safety-list.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('onsite-safety.jpg') center/cover no-repeat;
     color: white;
     padding: 8rem 0;
     text-align: center;
