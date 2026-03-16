@@ -95,6 +95,15 @@ body {
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
 }
 
+.hero-image {
+    max-width: 100%;
+    height: auto;
+    width: 400px;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
 /* ========== About Section ========== */
 .about {
     padding: 4rem 0;
