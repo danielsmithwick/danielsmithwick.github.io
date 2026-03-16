@@ -1,0 +1,18 @@
+# GitHub Pages Configuration
+# This file helps configure your GitHub Pages site
+
+# Site metadata
+title: "Your Portfolio"
+description: "A personal portfolio website showcasing my projects and skills"
+author: "Your Name"
+url: "https://username.github.io"  # Update with your actual GitHub Pages URL
+
+# Build settings
+markdown: kramdown
+theme: jekyll-theme-minimal  # Optional theme (you can remove this for plain HTML)
+
+# Disable Jekyll processing if using plain HTML
+jekyll: false
+
+# Other settings
+show_downloads: false
