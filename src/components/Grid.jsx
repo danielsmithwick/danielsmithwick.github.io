@@ -19,8 +19,12 @@ const TYPE_ICONS = {
 }
 
 export default function Grid() {
-  // shuffle once per page load — different order every visit
-  const tiles = useMemo(() => shuffle(activeTiles), [])
+  // bio tile always first; rest shuffle on every visit
+  const tiles = useMemo(() => {
+    const bio = activeTiles.filter(t => t.type === 'bio')
+    const rest = activeTiles.filter(t => t.type !== 'bio')
+    return [...bio, ...shuffle(rest)]
+  }, [])
   const [selected, setSelected] = useState(null)
 
   return (
