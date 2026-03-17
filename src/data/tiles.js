@@ -243,7 +243,7 @@ export const tiles = [
     id: 'amazon',
     type: 'image',
     size: 'sm',
-    tag: 'Career · Amazon Robotics · 2021',
+    tag: 'Career · Amazon Robotics · 2024',
     title: 'Amazon Proteus — Autonomous Mobile Robot',
     image: '/images/amazon-proteus.jpg',
     description: 'Senior Manager, Product Launch at Amazon Fulfillment Technologies & Robotics — leading new robotic systems including Proteus (Amazon\'s first fully autonomous mobile robot) from development through large-scale warehouse deployment.',
