@@ -410,6 +410,16 @@ export const tiles = [
     link: 'https://mit.academia.edu/DanielSmithwick',
   },
   {
+    id: 'book-mass-customised',
+    type: 'paper',
+    size: 'sm',
+    tag: 'Book Chapter · Routledge · 2013',
+    title: 'Mass Customised Structures for Relief',
+    image: '/images/mass-customised-book.jpg',
+    description: 'Book chapter in "Mass Customisation and Personalisation in Architecture and Construction" (Routledge, 2013) — co-authored with Lawrence Sass. Presents a novel computational system for physically producing mass customised building designs for relief housing.',
+    link: 'https://www.taylorfrancis.com/chapters/edit/10.4324/9780203437735-19/mass-customised-structures-relief-lawrence-sass-daniel-smithwick',
+  },
+  {
     id: 'phd-dissertation',
     type: 'paper',
     size: 'sm',
