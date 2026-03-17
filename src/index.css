@@ -29,6 +29,20 @@ html, body, #root {
   overflow: hidden;
   cursor: pointer;
   background: #111;
+  z-index: 1;
+  transition: transform 0.45s cubic-bezier(0.34, 1.4, 0.64, 1),
+              z-index 0s;
+}
+
+.tile:not(.tile--bio):hover {
+  transform: scale(1.9);
+  z-index: 10;
+  overflow: visible;
+}
+
+/* Prevent hover-loop flicker: freeze pointer events on all other tiles while one is expanded */
+.grid:has(.tile:not(.tile--bio):hover) .tile:not(:hover) {
+  pointer-events: none;
 }
 
 .tile-bg {
@@ -97,26 +111,6 @@ html, body, #root {
 .tile--wide .tile-desc,
 .tile--tall .tile-desc { display: block; }
 
-/* ── Tile expand / contract animations ──────────────────────────────────── */
-@keyframes tileExpand {
-  0%   { transform: scale(0.45); }
-  100% { transform: scale(1); }
-}
-
-@keyframes tileContract {
-  0%   { transform: scale(1); }
-  100% { transform: scale(0.45); }
-}
-
-.tile--expanding {
-  animation: tileExpand 0.5s cubic-bezier(0.34, 1.4, 0.64, 1) forwards;
-  z-index: 5;
-}
-
-.tile--contracting {
-  animation: tileContract 0.34s ease-in forwards;
-  z-index: 5;
-}
 
 /* ── Video play icon ─────────────────────────────────────────────────────── */
 .tile-play-icon {

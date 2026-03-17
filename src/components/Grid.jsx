@@ -1,4 +1,4 @@
-import { useState, useMemo, useRef, useCallback } from 'react'
+import { useState, useMemo } from 'react'
 import Modal from './Modal'
 import { activeTiles } from '../data/tiles'
 
@@ -28,76 +28,46 @@ export default function Grid() {
   }, [])
 
   const [selected, setSelected] = useState(null)
-  const [expandedId, setExpandedId] = useState(null)
-  const [contractingId, setContractingId] = useState(null)
-  const timerRef = useRef(null)
-
-  const handleMouseEnter = useCallback((tile) => {
-    if (tile.type === 'bio') return
-    if (timerRef.current) clearTimeout(timerRef.current)
-    setContractingId(null)
-    setExpandedId(tile.id)
-  }, [])
-
-  const handleMouseLeave = useCallback((tile) => {
-    if (tile.type === 'bio') return
-    setContractingId(tile.id)
-    timerRef.current = setTimeout(() => {
-      setExpandedId(null)
-      setContractingId(null)
-    }, 340)
-  }, [])
 
   return (
     <>
       <div className="grid">
-        {tiles.map((tile) => {
-          const isBio = tile.type === 'bio'
-          const isExpanded = expandedId === tile.id
-          const isContracting = contractingId === tile.id
-          const displaySize = (!isBio && isExpanded) ? 'lg' : (tile.size || 'sm')
-          const animClass = isExpanded && !isContracting ? 'tile--expanding'
-                          : isContracting ? 'tile--contracting'
-                          : ''
-          return (
-            <div
-              key={tile.id}
-              className={`tile tile--${displaySize} ${animClass}`}
-              onMouseEnter={() => handleMouseEnter(tile)}
-              onMouseLeave={() => handleMouseLeave(tile)}
-              onClick={() => setSelected(tile)}
-            >
-              {tile.image ? (
-                <img src={tile.image} alt={tile.title} className="tile-bg" />
-              ) : (
-                <div
-                  className="tile-color"
-                  style={{ background: tile.color || '#1e293b' }}
-                />
-              )}
+        {tiles.map((tile) => (
+          <div
+            key={tile.id}
+            className={`tile tile--${tile.size || 'sm'}${tile.type === 'bio' ? ' tile--bio' : ''}`}
+            onClick={() => setSelected(tile)}
+          >
+            {tile.image ? (
+              <img src={tile.image} alt={tile.title} className="tile-bg" />
+            ) : (
+              <div
+                className="tile-color"
+                style={{ background: tile.color || '#1e293b' }}
+              />
+            )}
 
-              <div className="tile-overlay">
-                <div className="tile-overlay-inner">
-                  <span className="tile-tag">
-                    {TYPE_ICONS[tile.type] ? `${TYPE_ICONS[tile.type]} ` : ''}
-                    {tile.tag}
-                  </span>
-                  <h3 className="tile-title">{tile.title}</h3>
-                  {tile.description && (
-                    <p className="tile-desc">
-                      {tile.description.slice(0, 120)}
-                      {tile.description.length > 120 ? '…' : ''}
-                    </p>
-                  )}
-                </div>
+            <div className="tile-overlay">
+              <div className="tile-overlay-inner">
+                <span className="tile-tag">
+                  {TYPE_ICONS[tile.type] ? `${TYPE_ICONS[tile.type]} ` : ''}
+                  {tile.tag}
+                </span>
+                <h3 className="tile-title">{tile.title}</h3>
+                {tile.description && (
+                  <p className="tile-desc">
+                    {tile.description.slice(0, 120)}
+                    {tile.description.length > 120 ? '…' : ''}
+                  </p>
+                )}
               </div>
-
-              {tile.type === 'video' && (
-                <div className="tile-play-icon">▶</div>
-              )}
             </div>
-          )
-        })}
+
+            {tile.type === 'video' && (
+              <div className="tile-play-icon">▶</div>
+            )}
+          </div>
+        ))}
       </div>
 
       {selected && (
