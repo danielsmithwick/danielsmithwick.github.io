@@ -268,15 +268,6 @@ export const tiles = [
     description: 'Senior Manager, Product Launch at Amazon Fulfillment Technologies & Robotics — leading new robotic systems including Proteus (Amazon\'s first fully autonomous mobile robot) from development through large-scale warehouse deployment.',
   },
   {
-    id: 'universal-robots',
-    type: 'image',
-    size: 'sm',
-    tag: 'Career · Universal Robots',
-    title: 'Universal Robots — Cobot in Manufacturing',
-    image: '/images/ur-manufacturing.jpg',
-    description: 'Global product management for collaborative robotic systems at Universal Robots — including the UR20, their fastest and strongest cobot ever, with 20kg payload and 30% more speed and torque.',
-  },
-  {
     id: 'universal-robots-lineup',
     type: 'image',
     size: 'sm',
