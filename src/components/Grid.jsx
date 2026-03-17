@@ -28,14 +28,21 @@ export default function Grid() {
     return rest
   }, [])
   const [selected, setSelected] = useState(null)
+  const [hoveredId, setHoveredId] = useState(null)
 
   return (
     <>
       <div className="grid">
-        {tiles.map((tile) => (
+        {tiles.map((tile) => {
+          const isBio = tile.type === 'bio'
+          const isHovered = hoveredId === tile.id
+          const displaySize = (!isBio && isHovered) ? 'lg' : (tile.size || 'sm')
+          return (
           <div
             key={tile.id}
-            className={`tile tile--${tile.size || 'sm'}`}
+            className={`tile tile--${displaySize}`}
+            onMouseEnter={() => !isBio && setHoveredId(tile.id)}
+            onMouseLeave={() => setHoveredId(null)}
             onClick={() => setSelected(tile)}
           >
             {tile.image ? (
@@ -67,7 +74,8 @@ export default function Grid() {
               <div className="tile-play-icon">▶</div>
             )}
           </div>
-        ))}
+          )
+        })}
       </div>
 
       {selected && (
