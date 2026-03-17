@@ -446,6 +446,17 @@ export const tiles = [
     image: 'https://img.youtube.com/vi/3Sd8yl12EIk/hqdefault.jpg',
     description: 'A 3D print visualization of Adinkra symbols — exploring digital fabrication and cultural design through parametric modeling.',
   },
+  {
+    id: 'video-5',
+    type: 'video',
+    size: 'wide',
+    tag: 'YouTube · MIT · Robotic Interaction',
+    title: 'Material-based Robotic Interaction — Rule Detection',
+    videoId: 'F3EmGOmfnf4',
+    image: 'https://img.youtube.com/vi/F3EmGOmfnf4/hqdefault.jpg',
+    description: 'Research on material-based robotic interaction — detecting rules and patterns through physical engagement with objects, bridging embodied design cognition and robot programming.',
+    link: 'https://www.youtube.com/@interactivedesigncognition551',
+  },
 ]
 
 // All tiles shown — video tiles without IDs show a placeholder with channel link
