@@ -234,7 +234,7 @@ export const tiles = [
     id: 'optimus',
     type: 'image',
     size: 'wide',
-    tag: 'Career · Autonomous Vehicles · 2019',
+    tag: 'Career · Autonomous Vehicles · 2020',
     title: 'Optimus Ride — Self-Driving Vehicles',
     image: '/images/optimus-ride.jpg',
     description: 'Product Manager for autonomous vehicle rider experience at Optimus Ride — owning the product roadmap and negotiating design freeze requirements across engineering and safety teams.',
