@@ -35,7 +35,7 @@ export default function Grid() {
         {tiles.map((tile) => (
           <div
             key={tile.id}
-            className={`tile tile--${tile.size || 'sm'}${tile.type === 'bio' ? ' tile--bio' : ''}`}
+            className={`tile tile--${tile.size || 'sm'}`}
             onClick={() => setSelected(tile)}
           >
             {tile.image ? (
