@@ -8,17 +8,6 @@
 
 export const tiles = [
 
-  // ── Bio ──────────────────────────────────────────────────────────────────
-  {
-    id: 'bio',
-    type: 'bio',
-    size: 'lg',
-    tag: 'About',
-    title: 'Daniel Smithwick',
-    image: '/daniel-smithwick.jpg',
-    description: `Research Manager at Autodesk with a PhD in Design and Computation from MIT. I'm driven by one question: how do we design better tools for people who build things?\n\n· Research Manager — Autodesk\n· Senior Manager, Product Launch — Amazon Robotics\n· Global Product Manager — Universal Robots\n· Product Manager — Optimus Ride\n· Postdoctoral Researcher — MIT Media Lab`,
-  },
-
   // ── Autodesk ─────────────────────────────────────────────────────────────
   {
     id: 'autodesk-twin',
@@ -415,8 +404,8 @@ export const tiles = [
   // ── LinkedIn ──────────────────────────────────────────────────────────────
   {
     id: 'linkedin',
-    type: 'career',
-    size: 'sm',
+    type: 'bio',
+    size: 'lg',
     tag: 'LinkedIn · Profile',
     title: 'Daniel Smithwick on LinkedIn',
     image: '/daniel-smithwick.jpg',
