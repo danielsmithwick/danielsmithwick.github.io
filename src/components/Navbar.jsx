@@ -6,6 +6,8 @@ export default function Navbar() {
         <ul className="nav-menu">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#research">Research</a></li>
+          <li><a href="#videos">Videos</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </div>
