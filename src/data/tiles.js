@@ -252,7 +252,7 @@ export const tiles = [
     id: 'universal-robots-lineup',
     type: 'image',
     size: 'sm',
-    tag: 'Career · Universal Robots · 2020',
+    tag: 'Career · Universal Robots · 2023',
     title: 'Universal Robots — UR3, UR5, UR10 Lineup',
     image: '/images/ur-factory-floor.jpg',
     description: 'The Universal Robots cobot lineup — UR3, UR5, and UR10 collaborative robot arms. Led global product strategy across the full portfolio of cobots designed for human-robot collaboration on the factory floor.',
