@@ -220,6 +220,16 @@ export const tiles = [
     link: 'https://fabacademy.org/2019/labs/dassault/students/daniel-smithwick/about/',
   },
   {
+    id: 'moma-nyt',
+    type: 'paper',
+    size: 'wide',
+    tag: 'Press · New York Times · 2008',
+    title: 'NYT: "A Dream House, On Demand" — MoMA Home Delivery',
+    image: '/images/digital-to-physical-workshop.jpg',
+    description: 'New York Times coverage of MoMA\'s Home Delivery exhibit — featuring the MIT digitally fabricated house. The exhibit showcased five full-scale prefab homes assembled on a vacant lot next to MoMA, exploring the future of affordable, customizable housing.',
+    link: 'https://www.nytimes.com/2008/07/18/arts/design/18dwel.html',
+  },
+  {
     id: 'nola',
     type: 'image',
     size: 'sm',
