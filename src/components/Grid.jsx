@@ -19,11 +19,13 @@ const TYPE_ICONS = {
 }
 
 export default function Grid() {
-  // bio tile always first; rest shuffle on every visit
+  // bio tile inserted at a random position in the first ~3 rows; rest shuffles freely
   const tiles = useMemo(() => {
-    const bio = activeTiles.filter(t => t.type === 'bio')
-    const rest = activeTiles.filter(t => t.type !== 'bio')
-    return [...bio, ...shuffle(rest)]
+    const bio = activeTiles.find(t => t.type === 'bio')
+    const rest = shuffle(activeTiles.filter(t => t.type !== 'bio'))
+    const insertAt = Math.floor(Math.random() * 16) // anywhere in first ~3 rows (6 cols)
+    rest.splice(insertAt, 0, bio)
+    return rest
   }, [])
   const [selected, setSelected] = useState(null)
 
