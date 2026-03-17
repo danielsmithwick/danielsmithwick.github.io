@@ -313,7 +313,7 @@ export const tiles = [
     size: 'sm',
     tag: 'SCOPES-DF · Workflow',
     title: 'From Digital to Physical',
-    image: '/images/digital-to-physical.jpg',
+    image: '/images/digital-to-physical-new.png',
     description: 'Bridging 3D modeling software and planar assembly — a workflow lesson connecting digital design tools to physical fabrication for students and educators.',
     link: 'https://www.scopesdf.org/scopesdf_lesson/digital-to-physical-translations/',
   },
