@@ -495,9 +495,20 @@ export const tiles = [
     tag: 'YouTube · MIT Media Lab',
     title: 'Changing Places Group — MIT Media Lab',
     videoId: 'ZLG09SfhPYc',
-    image: 'https://img.youtube.com/vi/ZLG09SfhPYc/3.jpg',
+    image: '/images/changing-places-thumb.jpg',
     description: 'The Changing Places Group at MIT Media Lab — research into adaptable, transformable living and working environments at the intersection of architecture, technology, and human-centered design.',
     link: 'https://www.media.mit.edu/groups/changing-places/overview/',
+  },
+  {
+    id: 'video-8',
+    type: 'video',
+    size: 'sm',
+    tag: 'YouTube · MIT · Robotics',
+    title: 'Robotic Pick and Place with Parallelepiped Blocks',
+    videoId: 'poxcmSMJZlU',
+    image: 'https://img.youtube.com/vi/poxcmSMJZlU/hqdefault.jpg',
+    description: 'A robot performing pick and place operations with parallelepiped blocks — demonstrating material-based robotic interaction informed by physical design cognition research.',
+    link: 'https://www.youtube.com/@interactivedesigncognition551',
   },
 ]
 
