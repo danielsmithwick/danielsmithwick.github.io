@@ -457,6 +457,17 @@ export const tiles = [
     description: 'Research on material-based robotic interaction — detecting rules and patterns through physical engagement with objects, bridging embodied design cognition and robot programming.',
     link: 'https://www.youtube.com/@interactivedesigncognition551',
   },
+  {
+    id: 'video-6',
+    type: 'video',
+    size: 'sm',
+    tag: 'YouTube · MIT · Physical Cognition',
+    title: 'Physical Design Cognition — Digitally Fabricated Horse Assembly',
+    videoId: 'P4oX_9bJm28',
+    image: 'https://img.youtube.com/vi/P4oX_9bJm28/hqdefault.jpg',
+    description: 'Physical design cognition research — assembly of a digitally fabricated horse, observing how designers think through physical making and material interaction.',
+    link: 'https://www.youtube.com/@interactivedesigncognition551',
+  },
 ]
 
 // All tiles shown — video tiles without IDs show a placeholder with channel link
