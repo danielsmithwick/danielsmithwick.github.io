@@ -468,6 +468,17 @@ export const tiles = [
     description: 'Physical design cognition research — assembly of a digitally fabricated horse, observing how designers think through physical making and material interaction.',
     link: 'https://www.youtube.com/@interactivedesigncognition551',
   },
+  {
+    id: 'video-7',
+    type: 'video',
+    size: 'wide',
+    tag: 'YouTube · MIT Media Lab',
+    title: 'Changing Places Group — MIT Media Lab',
+    videoId: 'ZLG09SfhPYc',
+    image: 'https://img.youtube.com/vi/ZLG09SfhPYc/hqdefault.jpg',
+    description: 'The Changing Places Group at MIT Media Lab — research into adaptable, transformable living and working environments at the intersection of architecture, technology, and human-centered design.',
+    link: 'https://www.media.mit.edu/groups/changing-places/overview/',
+  },
 ]
 
 // All tiles shown — video tiles without IDs show a placeholder with channel link
