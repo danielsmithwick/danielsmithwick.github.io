@@ -25,7 +25,7 @@ export default function Modal({ tile, onClose }) {
         {isVideo && (
           <iframe
             className="modal-video-frame"
-            src={`https://www.youtube.com/embed/${tile.videoId}?autoplay=1`}
+            src={`https://www.youtube.com/embed/${tile.videoId}?autoplay=1&mute=1`}
             title={tile.title}
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen

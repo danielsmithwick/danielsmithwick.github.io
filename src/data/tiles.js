@@ -220,16 +220,6 @@ export const tiles = [
     link: 'https://fabacademy.org/2019/labs/dassault/students/daniel-smithwick/about/',
   },
   {
-    id: 'moma-nyt',
-    type: 'paper',
-    size: 'wide',
-    tag: 'Press · New York Times · 2008',
-    title: 'NYT: "A Dream House, On Demand" — MoMA Home Delivery',
-    image: '/images/digital-to-physical-workshop.jpg',
-    description: 'New York Times coverage of MoMA\'s Home Delivery exhibit — featuring the MIT digitally fabricated house. The exhibit showcased five full-scale prefab homes assembled on a vacant lot next to MoMA, exploring the future of affordable, customizable housing.',
-    link: 'https://www.nytimes.com/2008/07/18/arts/design/18dwel.html',
-  },
-  {
     id: 'nola',
     type: 'image',
     size: 'sm',
@@ -242,11 +232,12 @@ export const tiles = [
   {
     id: 'house-construction',
     type: 'image',
-    size: 'sm',
-    tag: 'MIT · Construction',
-    title: 'Digitally Fabricated House — Assembly',
+    size: 'wide',
+    tag: 'MIT · MoMA · Digital Fabrication',
+    title: 'Digital Fabrication at the Museum of Modern Art',
     image: '/images/house1.jpg',
-    description: 'On-site assembly of a digitally fabricated house — translating digital design files directly into physical construction through CNC-cut components.',
+    description: '5,000 unique CNC-cut parts, 21 days to assemble, 4 people — the MIT digitally fabricated house for New Orleans, exhibited at MoMA\'s Home Delivery show in New York City.',
+    link: 'https://www.nytimes.com/2008/07/18/arts/design/18dwel.html',
   },
 
   // ── Career ────────────────────────────────────────────────────────────────
@@ -258,15 +249,6 @@ export const tiles = [
     title: 'Optimus Ride — Self-Driving Vehicles',
     image: '/images/optimus-ride.jpg',
     description: 'Product Manager for autonomous vehicle rider experience at Optimus Ride — owning the product roadmap and negotiating design freeze requirements across engineering and safety teams.',
-  },
-  {
-    id: 'optimus-2',
-    type: 'image',
-    size: 'sm',
-    tag: 'Career · Autonomous Vehicles',
-    title: 'Optimus Ride — Sensor Systems',
-    image: '/images/optimus-ride-2.jpg',
-    description: 'The sensor and camera systems used by Optimus Ride autonomous vehicles — deployed across Boston\'s Seaport and Brooklyn Navy Yard.',
   },
   {
     id: 'amazon',
@@ -430,6 +412,19 @@ export const tiles = [
     link: 'https://dspace.mit.edu/handle/1721.1/106727',
   },
 
+  // ── LinkedIn ──────────────────────────────────────────────────────────────
+  {
+    id: 'linkedin',
+    type: 'career',
+    size: 'sm',
+    tag: 'LinkedIn · Profile',
+    title: 'Daniel Smithwick on LinkedIn',
+    image: null,
+    color: '#0a66c2',
+    description: 'Connect with Daniel Smithwick on LinkedIn — Research Manager at Autodesk, PhD MIT. Career spanning robotics, autonomous vehicles, digital fabrication, and AI research.',
+    link: 'https://www.linkedin.com/in/danielsmithwick',
+  },
+
   // ── Videos ────────────────────────────────────────────────────────────────
   // To add a video: copy the ID from a YouTube URL (the part after "v=")
   // e.g. youtube.com/watch?v=ABC123XYZ12 → videoId: 'ABC123XYZ12'
@@ -492,11 +487,11 @@ export const tiles = [
     id: 'video-7',
     type: 'video',
     size: 'wide',
-    tag: 'YouTube · MIT Media Lab',
-    title: 'Changing Places Group — MIT Media Lab',
-    videoId: 'ZLG09SfhPYc',
-    image: '/images/changing-places-thumb.jpg',
-    description: 'The Changing Places Group at MIT Media Lab — research into adaptable, transformable living and working environments at the intersection of architecture, technology, and human-centered design.',
+    tag: 'YouTube · MIT Media Lab · CityHome',
+    title: 'CityHome — Changing Places Group, MIT Media Lab',
+    videoId: '9S7TyxSq1L8',
+    image: '/images/cityhome-apartment.jpg',
+    description: 'CityHome by the MIT Changing Places Group — a transformable micro-apartment that expands from 200 to 3× its size through robotic actuated walls, enabling flexible living in dense urban environments.',
     link: 'https://www.media.mit.edu/groups/changing-places/overview/',
   },
   {
