@@ -8,6 +8,19 @@
 
 export const tiles = [
 
+  // ── Dream House ──────────────────────────────────────────────────────────
+  {
+    id: 'dream-house',
+    type: 'image',
+    size: 'wide',
+    tag: 'Autodesk · Fusion 360 · 2026',
+    title: 'Multigenerational Dream House — Interactive Floor Plan',
+    image: null,
+    color: '#0f172a',
+    link: '/dream-house.html',
+    description: 'A collaborative Fusion 360 design workshop where a team of 5 used the Python API and Claude Code to generate a 10-bedroom Gehry-inspired multigenerational house — complete with gaming room, music studio, pool, and courtyard. Click to explore the interactive floor plan.',
+  },
+
   // ── Autodesk ─────────────────────────────────────────────────────────────
   {
     id: 'autodesk-twin',
