@@ -32,8 +32,8 @@ export default function Modal({ tile, onClose }) {
           />
         )}
 
-        {!isVideo && tile.image && (
-          <img src={tile.image} alt={tile.title} className="modal-image" />
+        {!isVideo && (tile.modalImage || tile.image) && (
+          <img src={tile.modalImage || tile.image} alt={tile.title} className="modal-image" />
         )}
 
         <div className="modal-info">
